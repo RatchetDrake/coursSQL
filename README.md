@@ -7,7 +7,7 @@ SELECT ( READ )
 UPDATE ( UPDATE )
 DELETE ( DELETE )
 
-## Créer une bade de donnée si elle n'existe pas
+Créer une bade de donnée si elle n'existe pas
 CREATE DATABASE IF NOT EXISTS
 CREATE DATABASE "BaseDeDonnee"; Une base de donnée c'est une base qui va stocké des données donc des tables
 
@@ -17,7 +17,7 @@ CREATE TABLE "table" (
     colonne2 type_donnee,
     colonne3 type_donnee
 );
-## Créer une table si elle n'existe pas
+Créer une table si elle n'existe pas
 CREATE TABLE IF NOT EXISTS 
 
 Exemple concret
@@ -47,15 +47,13 @@ BOOLEAN (true, false)
 ENUM (Choix variable défini)
 
 ALTER TABLE nomTable 
-## J'ajoute une clé primaire
+J'ajoute une clé primaire
     ADD PRIMARY KEY ('nomColonne'), 
-## J'ajoute une colonne
+J'ajoute une colonne
     ADD nomColonneChien VARCHAR(100)
-## Je retire une colonne
+Je retire une colonne
     DROP nomColonne 
-## Je modifie une colonne
+Je modifie une colonne
     MODIFY nomColoneChien VARCHAR(200) 
 ;
 Alter table permet de modifier une colonne de la table défini dans mon cas juste au dessus je défini la colonne nomColonne comme clé primaire
-
-
