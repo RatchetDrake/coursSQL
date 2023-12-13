@@ -68,10 +68,4 @@ INSERT INTO commande (client_id, date_achat, reference, prix_total) VALUES
 (1, '2023-12-12 10:10:10', '001471', 100);
 
 
-CREATE TABLE IF NOT EXISTS produit (
-    id INT(11) PRIMARY KEY AUTO_INCREMENT,
-    nom VARCHAR(255) NOT NULL,
-    quantite INT(11) NOT NULL,
-    prix FLOAT NOT NULL
-)
 
