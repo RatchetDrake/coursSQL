@@ -56,7 +56,13 @@ try {
 if (!empty($livres)) {
     // Affichage des livres
     echo "<table>";
-    echo "<tr><th>ID</th><th>Titre</th><th>ISBN</th><th>Résumé</th><th>Actions</th></tr>";
+    echo "<tr>
+    <th>ID</th>
+    <th>Titre</th>
+    <th>ISBN</th>
+    <th>Résumé</th>
+    <th>Actions</th>
+    </tr>";
 
     foreach ($livres as $livre) {
         echo "<tr>";
@@ -79,7 +85,7 @@ if (!empty($livres)) {
 
 echo "<a href='./Views/create.php'>Ajouter un nouveau livre</a>";
 ?> <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
